@@ -15,7 +15,7 @@ class Application
       search_term = req.params["item"]
       resp.write handle_search(search_term)
     elsif @@cart =
-      resp.write "Your cart is empty"
+      resp.write "\nYour cart is empty"
     end
     resp.finish
   end
