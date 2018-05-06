@@ -14,7 +14,7 @@ class Application
     elsif req.path.match(/add/)
       search_term = req.params["item"]
       resp.write handle_search(search_term)
-    elsif @@cart ==
+    elsif @@cart =
       resp.write "Your cart is empty"
     end
     resp.finish
